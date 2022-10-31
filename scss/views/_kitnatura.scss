@@ -1,0 +1,38 @@
+/*----------------------- PAG: KITNATURA ------------------*/
+
+.mainKitNatura{
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    &__section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr ;      
+        gap: 2px;
+        grid-auto-rows: 300px;
+        grid-auto-flow: row;        
+    }
+    &__article{
+        width:300px;
+        div { 
+                      
+            img{
+                
+                
+                &:hover{
+                    transition: all ease .5s;
+                    transform: scale(1.5);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px){
+    .mainKitNatura{
+        &__section {
+            grid-template-columns: 2fr 2fr;      
+            gap: 2px;
+               
+        }
+    }
+}
